@@ -7,7 +7,9 @@ window.onload = function(){
 	timer.tick();			
 	timer.tick(); */	
 	
-	setInterval(timer.tick, 1000);
+	setInterval(
+		function(){timer.tick()},
+		1000);
 		
 	function Timer(time, elem){
 		
